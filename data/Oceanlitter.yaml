@@ -1,0 +1,23 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to YOLOv3:
+#   /parent_folder
+#     /coco128
+#     /yolov3
+# download command/URL (optionali)
+
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./data/litterdata/trainimg/images   # 128 images
+#val: ./data/litterdata/valimg/images  # 128 images
+val: ./data/litterdata/trainimg/images  # 128 images
+test: ./data/litterdata/testimg/images
+
+# number of classes
+nc: 13
+
+# class names
+names: ['Styrofoam_Piece', 'PET_Bottle', 'Rope', 'Styrofoam_Buoy',
+        'Plastic_ETC', 'Styrofoam_Box', 'Net', 'Plastic_Buoy', 'Metal',
+        'Glass', 'Plastic_Buoy_China', 'Blur', 'Plastic_Buoy_origin_none']

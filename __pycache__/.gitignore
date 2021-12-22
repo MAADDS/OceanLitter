@@ -1,0 +1,17 @@
+## 폴더 무시
+data/litterdata/
+yolov5s.pt
+runs/**/best.pt
+runs/**/last.pt
+## .vsCode 무시
+#.vscode/
+wandb/
+
+## img file 무시 
+#data/
+
+## .gitignore 적용이 안될 경우
+## git rm -r --cached .
+## git add -A
+## git commit -m "Apply .gitignore"
+## git push
